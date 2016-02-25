@@ -16,10 +16,9 @@ body {}
 	margin-left:10%;
 	border-left: 2px solid white;
 }
-
 .top-bar-right{
-	margin-right:10%;
-	border-right: 2px solid white;
+  margin-right:10%;
+  border-right: 2px solid white;
 }
 .menu-text {
   color: #fff; }
@@ -126,3 +125,83 @@ body {}
       left: 0; }
 /* End styles for social media buttons */
 
+/* Footer Begins here */
+ .footer-base {
+      background-color: #820672;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 4rem
+      }
+
+       .footer-base p.copywrite {
+    color: #8f9296;
+    font-size: 0.875rem;
+    margin: 0; }
+
+     
+
+
+        h5{
+          display: block;
+          font-size: 0.83em;
+          font-weight: bold;
+          color: white;
+        }
+        i {
+  font-size: 2.5rem; }
+
+.icon-button {
+  border-radius: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  background: white;
+   }
+  .icon-button span {
+    display: block;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all 0.3s; }
+  .icon-button:hover span {
+    display: block;
+    border-radius: 3.6rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: -1.8rem; }
+  .icon-button i {
+    background: none;
+    height: 3.6rem;
+    width: 3.6rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    line-height: 3.6rem;
+    transition: all 0.3s; }
+
+.icon-button .fi-social-twitter {
+  color: #4099ff; }
+
+.icon-button .fi-social-facebook {
+  color: #3b5998; }
+
+.icon-button .fi-social-linkedin {
+  color: #007bb5; }
+
+.icon-button:hover .fi-social-twitter, .icon-button:hover .fi-social-facebook, .icon-button:hover .fi-social-linkedin {
+  color: #820672;
+  font-size: 2.6rem;
+  line-height: 3.9rem; }
+
+
+}
+
+/* footer ends here*/
