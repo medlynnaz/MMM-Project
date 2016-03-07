@@ -125,12 +125,40 @@ body {}
       left: 0; }
 /* End styles for social media buttons */
 
+/*Navigation Bar begins here*/
+  .header-subnav {
+  float:left;
+ position: fixed;
+  top: 4rem;
+  text-align: center;
+  margin-bottom: 0; }
+  
+  .header-subnav li {
+    float: left;
+	display: inline-block; }
+	
+    .header-subnav li a {
+	 padding: 0.35rem 0.60rem 0.75rem;
+      font-size: 0.875rem;
+      color: #fff;
+      text-transform: uppercase;
+      display: block;
+      font-weight: bold;
+      letter-spacing: 1px; }
+	
+	 .header-subnav li a:hover {	
+		color: #820672;
+		background : #ffffff;
+	}
+		
+		/* Navigation Bar Ends here*/
+
 /* Footer Begins here */
  .footer-base {
       background-color: #820672;
       text-align: center;
       font-size: 1.2rem;
-      padding: 4rem
+      padding: 12rem
       }
 
        .footer-base p.copywrite {
