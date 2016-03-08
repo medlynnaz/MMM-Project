@@ -8,7 +8,7 @@
 	<!--Including Style sheets-->
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
-		<!--This style sheet is used to provide the icons for the social media buttons-->
+	<!--This style sheet is used to provide the icons for the social media buttons-->
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 
   </head>
@@ -16,53 +16,69 @@
 	<!--HTML for the top bar (containing contact us and social media)-->
 	<div class="top-bar" id="main-menu">
 		<div class="top-bar-left">
-		<ul class="dropdown menu" data-dropdown-menu>
-			<a href="#"><li class="menu-text">Contact Us</li></a>
-		</ul>
-	</div>
+			<ul class="dropdown menu" data-dropdown-menu>
+				<a href="#"><li class="menu-text">Contact Us</li></a>
+			</ul>
+		</div>
 	
-	<div class="top-bar-right">
-		<ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-			<li><button href="#" class="search button split"><a href="mailto:iad.projects@ed.ac.uk"><span></span></a></button></li>
-			<li><button href="#" class="mail button split"><a href="mailto:iad.projects@ed.ac.uk"><span></span></a></button></li>
-			<li><button href="#" class="facebook button split"><a href="https://facebook.com"><span></span></a></button></li>
-			<li><button href="#" class="twitter button split"><a href="https://twitter.com/LTW2_MMM"><span></span></a></button></li>
-			<li><button href="#" class="linkedin button split"><a href="http://www.linkedin.com/groups/Making-Most-Masters-4100224?gid=4100224&amp;trk=hb_side_g"><span></span></a></button></li>
-		</ul>
+		<div class="top-bar-right">
+			<ul class="menu" data-responsive-menu="drilldown medium-dropdown">
+				<li><button href="#" class="search button split"><a href="mailto:iad.projects@ed.ac.uk"><span></span></a></button></li>
+				<li><button href="#" class="mail button split"><a href="mailto:iad.projects@ed.ac.uk"><span></span></a></button></li>
+				<li><button href="#" class="facebook button split"><a href="https://facebook.com"><span></span></a></button></li>
+				<li><button href="#" class="twitter button split"><a href="https://twitter.com/LTW2_MMM"><span></span></a></button></li>
+				<li><button href="#" class="linkedin button split"><a href="http://www.linkedin.com/groups/Making-Most-Masters-4100224?gid=4100224&amp;trk=hb_side_g"><span></span></a></button></li>
+			</ul>
+		</div>
 	</div>
-	<ul class="header-subnav">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About MMM</a></li>
-	<li><a href="#">Gallery</a></li>
-	<li><a href="#">Project Partners</a></li>
-	<li><a href="#">WorkBased Projects</a></li>
-	<li><a href="#">Publications</a></li>
-	<li><a href="#">MMM Toolkits</a></li>
-  </ul>
-
 	<!--End of top bar HTML-->
+	<!--NavBar HTML-->
+	<div id="nav-container">
+		<div class="Nav-bar">
+			<img id="logo" src="img\logo.png"></img>
+			<ul class="vertical medium-horizontal menu">
+				<li><a href="#">Menu 1</a></li>
+				<li><a href="#">Menu 2</a></li>
+				<li><a href="#">Menu 3</a></li>
+			</ul>
+			<ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
+				<li class="has-submenu">
+					<a href="#">Menu 4</a>
+					<ul class="submenu menu vertical medium-horizontal" data-submenu>
+						<li><a href="#">First link in dropdown</a></li>
+					</ul>
+				</li>
+				<li class="has-submenu">
+					<a href="#">Menu 5</a>
+					<ul class="submenu menu vertical" data-submenu>
+						<li><a href="#">First link in dropdown</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--End of Navbar HTML-->
+	<!--Footer HTML-->
+	<!--
+	<div id="footer-base">
+		<h5>Stay Connected</h5>
+		<a href="#" class="icon-button twitter">
+			<i class="fi-social-twitter"></i><span></span>
+		</a>
+		<a href="#" class="icon-button facebook">
+			<i class="fi-social-facebook"></i><span></span>
+		</a>
+		<a href="#" class="icon-button gplus">
+			<i class="fi-social-linkedin"></i><span></span>
+		</a>
+		<p class="copywrite">Copywrite Not Copywrite. All Rights Reserved. © 2015</p>
+		<marquee behaviour="alternate" direction ="left"><img src="../MMM-Project/AberdeenLogo.jpg"/><img src="../MMM-Project/EdinburghLogo.jpeg"/><img src="../MMM-Project/StirlingLogo.png"/></marquee>
+	</div>
+	-->
+	<!--End of footer HTML--> 
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
   </body>
-  <footer class="footer-base">
-
-  <h5>Stay Connected</h5>
-  
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-
-<a href="#" class="icon-button twitter">
-  <i class="fi-social-twitter"></i><span></span>
-</a>
-<a href="#" class="icon-button facebook">
-  <i class="fi-social-facebook"></i><span></span>
-</a>
-<a href="#" class="icon-button gplus">
-  <i class="fi-social-linkedin"></i><span></span>
-</a>
-<p class="copywrite">Copywrite Not Copypwrite. All Rights Reserved. © 2015</p>
-<marquee behaviour="alternate" direction ="left"><img src="../MMM-Project/AberdeenLogo.jpg"/><img src="../MMM-Project/EdinburghLogo.jpeg"/><img src="../MMM-Project/StirlingLogo.png"/></marquee>
-</footer>
-
 </html>

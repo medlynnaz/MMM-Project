@@ -1,4 +1,6 @@
-body {}
+body {
+	background-color: #eee;
+}
 
 /* This is the styling for the top bar (containing the contact us link and social media buttons) */
 .top-bar {
@@ -6,19 +8,21 @@ body {}
 	padding:0px;
 	background-color: #820672;
 	}
-  .top-bar ul { }
-    .top-bar ul li {
+.top-bar ul li {
 	background-color: #820672
-	}
-      .top-bar ul li a {
-        color: #fff; }
+}
+.top-bar ul li a {
+    color: #fff; 
+}
 .top-bar-left{
 	margin-left:10%;
 	border-left: 2px solid white;
+	float:left;
 }
 .top-bar-right{
   margin-right:10%;
   border-right: 2px solid white;
+  float:right;
 }
 .menu-text {
   color: #fff; }
@@ -126,57 +130,71 @@ body {}
 /* End styles for social media buttons */
 
 /*Navigation Bar begins here*/
-  .header-subnav {
-  float:left;
- position: fixed;
-  top: 4rem;
-  text-align: center;
-  margin-bottom: 0; }
-  
-  .header-subnav li {
-    float: left;
-	display: inline-block; }
+/* Medium-Up Navigation */
+#nav-container{
+	height:100px;
+	margin:auto;
+	padding:0px;
+	background-color:white;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 40rem) {    
+.Nav-bar{
+	height:inherit;
+	margin-left:10%;
+	margin-right:10%;
+}
+.Nav-bar #logo{
+	float:left;
+	height:inherit;
+}
+.Nav-bar ul {
+    float: left; 
+}
+.Nav-bar li{
+	height:100px;
+}
+
+.menu > li{
+	vertical-align:bottom;
 	
-    .header-subnav li a {
-	 padding: 0.35rem 0.60rem 0.75rem;
-      font-size: 0.875rem;
-      color: #fff;
-      text-transform: uppercase;
-      display: block;
-      font-weight: bold;
-      letter-spacing: 1px; }
-	
-	 .header-subnav li a:hover {	
-		color: #820672;
-		background : #ffffff;
-	}
-		
-		/* Navigation Bar Ends here*/
+}
+
+.Nav-bar a{
+	color:gray;
+	margin-left: 25px;
+}
+.is-dropdown-submenu-parent.is-right-arrow > a::after {
+	content: none;
+}
+/* Navigation Bar Ends here*/
 
 /* Footer Begins here */
  .footer-base {
-      background-color: #820672;
-      text-align: center;
-      font-size: 1.2rem;
-      padding: 12rem
-      }
+	position:relative;
+	top:100px;
+    background-color: #820672;
+    text-align: center;
+    font-size: 1.2rem;
+	padding: 12rem
+}
 
-       .footer-base p.copywrite {
-    color: #8f9296;
+.footer-base p.copywrite {
+	color: #8f9296;
     font-size: 0.875rem;
-    margin: 0; }
+    margin: 0; 
+}
 
-     
-
-
-        h5{
-          display: block;
-          font-size: 0.83em;
-          font-weight: bold;
-          color: white;
-        }
-        i {
-  font-size: 2.5rem; }
+h5{
+    display: block;
+    font-size: 0.83em;
+    font-weight: bold;
+    color: white;
+}
+i {
+	font-size: 2.5rem; 
+}
 
 .icon-button {
   border-radius: 3.6rem;
