@@ -132,6 +132,7 @@ body {
 /*Navigation Bar begins here*/
 /* Medium-Up Navigation */
 #nav-container{
+	 background-color: white;
 	height:100px;
 	margin:auto;
 	padding:0px;
@@ -141,17 +142,17 @@ body {
 
 @media only screen and (min-width: 40rem) {    
 .Nav-bar{
-	height:inherit;
-	margin-left:10%;
-	margin-right:10%;
+	margin-right:2%;
 }
 .Nav-bar #logo{
 	float:left;
 	height:inherit;
+	margin-right: 20px;
 }
 .Nav-bar ul {
     float: left; 
-}
+	}
+
 .Nav-bar li{
 	height:100px;
 }
@@ -162,28 +163,82 @@ body {
 }
 
 .Nav-bar a{
-	color:gray;
-	margin-left: 25px;
+	color:#000000;
+	font-weight: 500;
+	margin-left: 5px;
 }
 .is-dropdown-submenu-parent.is-right-arrow > a::after {
 	content: none;
 }
 /* Navigation Bar Ends here*/
 
+/* BackgroundImageForFrontPage starts here */
+.hero {
+  background: url("../school-supplies-lists-for-kids-hd-pictures-hdwallwide-com.jpg") no-repeat center center;
+  background-size:cover;
+  opacity: 0.5;
+  top: 100em;
+  height: 70vh; }
+  .hero:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+     opacity: .8;
+	 }
+  .hero .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .hero h1 {
+    color: #000000;
+	background-color: white;
+    font-size: 60px;
+    line-height: 1.75em;
+    letter-spacing: -0.025em;
+    font-weight: 900;
+    text-align: center; }
+  .hero p {
+    color: #000000;
+	font-size: 40px;
+	background-color: white;
+    line-height: 1.75em;
+	letter-spacing: -0.025em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem; }
+ 
+  @media only screen and (min-width: 40.063em) {
+    .hero .tech-img {
+      height: 18rem;
+      width: 18rem; }
+    .hero h1 {
+      padding-top: 4.5rem;
+      text-align: right;
+      font-size: 2.5rem; }
+    .hero p {
+      text-align: right; } }
+
+
+/* BackgroundImageForFrontPage ends here */
+
 /* Footer Begins here */
  .footer-base {
-	position:relative;
+ position:relative;
 	top:100px;
     background-color: #820672;
     text-align: center;
     font-size: 1.2rem;
 	padding: 12rem
 }
-
 .footer-base p.copywrite {
 	color: #8f9296;
     font-size: 0.875rem;
-    margin: 0; 
+    margin: 10; 
+	text-align: right;
 }
 
 h5{
