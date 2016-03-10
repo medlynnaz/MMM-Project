@@ -226,19 +226,21 @@ body {
 /* BackgroundImageForFrontPage ends here */
 
 /* Footer Begins here */
- .footer-base {
+ #footer-base {
  position:relative;
-	top:100px;
     background-color: #820672;
     text-align: center;
     font-size: 1.2rem;
-	padding: 12rem
+	padding: 1rem
 }
 .footer-base p.copywrite {
 	color: #8f9296;
     font-size: 0.875rem;
     margin: 10; 
 	text-align: right;
+}
+p.copywrite{
+     color: white;
 }
 
 h5{
@@ -247,6 +249,7 @@ h5{
     font-weight: bold;
     color: white;
 }
+
 i {
 	font-size: 2.5rem; 
 }
@@ -306,8 +309,6 @@ img {
   width: 120;
   height: 80;
   background-color: #820672;
-}
-
 }
 
 /* footer ends here*/
