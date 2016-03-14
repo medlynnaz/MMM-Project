@@ -1,15 +1,17 @@
 body {
 	background-color: #eee;
+	font-family: 'fjalla_oneregular', sans-serif;
 }
-
 /* This is the styling for the top bar (containing the contact us link and social media buttons) */
 .top-bar {
+	position:static;
 	margin:auto;
 	padding:0px;
 	background-color: #820672;
+	z-index: 20;
 	}
 .top-bar ul li {
-	background-color: #820672
+	background-color: #820672;
 }
 .top-bar ul li a {
     color: #fff; 
@@ -132,40 +134,44 @@ body {
 /*Navigation Bar begins here*/
 /* Medium-Up Navigation */
 #nav-container{
-	 background-color: white;
+	position:static;
+	background-color: white;
 	height:100px;
 	margin:auto;
 	padding:0px;
 	background-color:white;
 	text-transform: uppercase;
+	z-index: 1;
 }
 
 @media only screen and (min-width: 40rem) {    
 .Nav-bar{
 	margin-right:2%;
+	margin-left:10%;
 }
 .Nav-bar #logo{
+	width:400px;
 	float:left;
 	height:inherit;
 	margin-right: 20px;
 }
 .Nav-bar ul {
     float: left; 
-	}
+}
 
 .Nav-bar li{
 	height:100px;
 }
 
 .menu > li{
-	vertical-align:bottom;
-	
+	text-align:center;
 }
 
 .Nav-bar a{
 	color:#000000;
 	font-weight: 500;
 	margin-left: 5px;
+	display:block;
 }
 .is-dropdown-submenu-parent.is-right-arrow > a::after {
 	content: none;
@@ -174,7 +180,7 @@ body {
 
 /* BackgroundImageForFrontPage starts here */
 .hero {
-  background: url("../school-supplies-lists-for-kids-hd-pictures-hdwallwide-com.jpg") no-repeat center center;
+  background: url("../img/background.jpg") no-repeat center center;
   background-size:cover;
   opacity: 0.5;
   top: 100em;
@@ -222,27 +228,32 @@ body {
     .hero p {
       text-align: right; } }
 
-
 /* BackgroundImageForFrontPage ends here */
 
 /* Footer Begins here */
  #footer-base {
- position:relative;
+	position:relative;
     background-color: #820672;
-    text-align: center;
     font-size: 1.2rem;
-	padding: 1rem
+	padding: 1rem;
+	height:160px;
 }
-.footer-base p.copywrite {
-	color: #8f9296;
-    font-size: 0.875rem;
-    margin: 10; 
+.footer-connect p.copywrite {
+	color: #820672;
+    font-size: 0.875rem; 
 	text-align: right;
 }
-p.copywrite{
-     color: white;
-}
 
+#footer-connect p.copywrite{
+     color: white;
+	 font-size:0.7rem;
+}
+#footer-connect{
+	height:140px;
+	z-index:30;
+	margin-left:10%;
+	float:left;
+}
 h5{
     display: block;
     font-size: 0.83em;
@@ -310,5 +321,11 @@ img {
   height: 80;
   background-color: #820672;
 }
-
 /* footer ends here*/
+/* Ticker Tape css*/
+#ticker-tape{
+	position: absolute;
+	height:100px;
+	width: inherit;
+}
+/* Ticker Tape css ends here*/
