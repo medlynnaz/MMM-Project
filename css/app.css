@@ -176,6 +176,7 @@ body {
 .is-dropdown-submenu-parent.is-right-arrow > a::after {
 	content: none;
 }
+
 /* Navigation Bar Ends here*/
 
 /* BackgroundImageForFrontPage starts here */
@@ -229,6 +230,7 @@ body {
       text-align: right; } }
 
 /* BackgroundImageForFrontPage ends here */
+
 
 /* Footer Begins here */
  #footer-base {
