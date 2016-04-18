@@ -1,0 +1,66 @@
+/* css for the main template */
+#body{
+
+}
+#body .row{
+   width: auto;
+   margin-left: auto;
+   margin-right: auto;
+   max-width:none;
+   min-width:700px;
+}
+
+#top-bar {
+    background: purple;
+	overflow: hidden;
+	min-width:850px;
+}
+#top-bar a{
+	background: purple;
+}
+#top-bar #buttons a:hover { 
+    background-color: white;
+	color: purple;
+}
+@media screen and (min-width: 40.063rem){
+	#top-bar .title-area{
+	border-left: 1px solid white;
+	margin-left: 10vw;
+	}
+	#nav-bar{
+	border-left: 1px solid white;
+	text-align:center;
+	}
+	#body .row{
+		margin-left: 10vw;
+		margin-right: 10vw;	
+	}
+}
+
+#top-bar .right{
+	border-right: 1px solid white;
+	margin-right: 10vw;
+}
+
+
+#logo{
+	background-color:white;
+}
+
+#nav-bar{
+	background: white;
+	overflow: hidden;
+}
+
+#nav-bar a{
+	background: white;
+	color: purple;
+}
+#buttons a:hover { 
+    background-color: purple;
+	color: white;
+}
+
+#nav-bar section.top-bar-section {
+display: inline-block;
+}
