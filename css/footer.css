@@ -1,9 +1,33 @@
+
+#orbit{
+	width:375px;
+	margin:auto;
+	margin-top:20px;
+}
+
 #footer{
 	background-color:purple;
-	height: 15vh;
+	text-align:center;
+	color:white;
+}
+#footer-connect{
+	margin-top:15px;
 }
 i {
 	font-size: 2.5rem; 
+}
+
+.copywrite{
+	display:none;
+}
+
+@media screen and (min-width: 40.063rem){
+	#orbit{
+		margin-top:20px;	
+	}
+	.copywrite{
+		display: inherit;
+	}
 }
 .icon-button {
   border-radius: 3rem;
@@ -55,4 +79,5 @@ i {
   color: #820672;
   font-size: 2.6rem;
   line-height: 3.9rem; }
+ 
 
