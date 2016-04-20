@@ -10,6 +10,9 @@
 	text-align:center;
 	color:white;
 }
+#orbit{
+	width:320px;
+}
 #footer-connect{
 	margin-top:15px;
 }
@@ -21,9 +24,10 @@ i {
 	display:none;
 }
 
-@media screen and (min-width: 40.063rem){
+@media screen and (min-width: 60.063rem){
 	#orbit{
-		margin-top:20px;	
+		margin-top:20px;
+		width:375px;
 	}
 	.copywrite{
 		display: inherit;

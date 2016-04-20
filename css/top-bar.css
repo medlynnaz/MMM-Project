@@ -1,34 +1,16 @@
-/* css for the main template */
-body{
-	font-family: 'fjalla_oneregular', sans-serif;
-    font-weight: normal;
-    font-size: 1.1em;
-	color:white;
-}
-#body .row{
-   width: auto;
-   margin-left: auto;
-   margin-right: auto;
-   max-width:none;
-}
-
+/* css for the top bar template */
 #top-bar {
     background: purple;
-	overflow: hidden;
+	overflow:hidden;
 }
 #top-bar a{
 	background: purple;
 }
+
 #top-bar #buttons a:hover { 
     background-color: white;
 	color: purple;
 }
-
-#top-bar .right{
-	border-right: 1px solid white;
-	margin-right: 10vw;
-}
-
 
 #logo{
 	background-color:white;
@@ -36,13 +18,40 @@ body{
 
 #nav-bar{
 	background: white;
-	overflow: hidden;
-	display: none;
+	overflow: visible;
+}
+
+#nav-bar .title-area{
+	top:25px;
+}
+#nav-bar .title-area a{ 
+	padding-right: 20px;
+}
+#drop{
+	max-width:100px;
+	overflow:visible;
 }
 
 #nav-bar a{
 	background: white;
 	color: purple;
+}
+#menu{
+	border-bottom:1px solid purple;
+}
+
+#buttons{
+	display:none;
+}
+#menu:hover + #buttons {
+	display: block; 
+}
+#buttons:hover{
+	display:block;
+}
+#menu a:hover{
+	background-color: purple;
+	color: white;
 }
 #buttons a:hover { 
     background-color: purple;
@@ -50,25 +59,34 @@ body{
 }
 
 #nav-bar section.top-bar-section {
-display: inline-block;
+	
+}
+#nav-bar .top-bar-section .right li .dropdown {
+    right: auto;
 }
 
 @media screen and (min-width: 40.063rem){
+	#nav-bar section.top-bar-section {
+		display: inline-block;
+	}
+	#buttons{
+		display:block;
+	}
+
+}
+
+@media screen and (min-width: 60.063rem){
 	#top-bar{
 		min-width:850px;
 	}
+	#top-bar .right{
+		margin-right: 10vw;
+	}
 	#top-bar .title-area{
-		border-left: 1px solid white;
 		margin-left: 10vw;
+			
 	}
 	#nav-bar{
-		border-left: 1px solid white;
 		text-align:center;
-		display: inherit;
-	}
-	#body .row{
-		margin-left: 10vw;
-		margin-right: 10vw;	
-		min-width:700px;
 	}
 }
