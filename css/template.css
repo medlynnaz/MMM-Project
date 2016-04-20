@@ -9,22 +9,26 @@ body{
    width: auto;
    margin-left: auto;
    margin-right: auto;
-   max-width:none;
-}
-#body img{
-	width:320px;
-	height: 90px;
 }
 
 @media screen and (min-width: 60.063rem){
 	#body .row{
-		margin-left: 10vw;
-		margin-right: 10vw;	
 		min-width:700px;
 	}
-	#body img{
-		width: auto;
-		height: auto;
-	}
 }
-
+#content{
+	padding-top:20px;
+	height: 70vh;
+	overflow-x:scroll;
+	border-top: 1px solid purple;
+	z-index:4;
+}
+#content h3{
+	color:purple;
+}
+#content h3 small{
+	color:lightblue;
+}
+#contain{
+	max-width:850px;
+}

@@ -5,8 +5,13 @@
 }
 #top-bar a{
 	background: purple;
+	max-width:120px;
 }
 
+#top-bar a:hover { 
+    background-color: white;
+	color: purple;
+}
 #top-bar #buttons a:hover { 
     background-color: white;
 	color: purple;
@@ -19,6 +24,7 @@
 #nav-bar{
 	background: white;
 	overflow: visible;
+	z-index:1000;
 }
 
 #nav-bar .title-area{
@@ -36,12 +42,16 @@
 	background: white;
 	color: purple;
 }
+#logo{
+	margin-right:20px;
+}
 #menu{
 	border-bottom:1px solid purple;
 }
 
 #buttons{
 	display:none;
+	
 }
 #menu:hover + #buttons {
 	display: block; 
@@ -77,13 +87,12 @@
 
 @media screen and (min-width: 60.063rem){
 	#top-bar{
-		min-width:850px;
 	}
 	#top-bar .right{
-		margin-right: 10vw;
+		margin-right: 10%;
 	}
 	#top-bar .title-area{
-		margin-left: 10vw;
+		margin-left: 10%;
 			
 	}
 	#nav-bar{
