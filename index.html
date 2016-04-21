@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/template.css" />
     <link rel="stylesheet" href="css/top-bar.css" />
 	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/index.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.css"/>
 	<!--This style sheet is used to provide the icons for the social media buttons-->
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
@@ -45,10 +46,10 @@
 		<section class="top-bar-section">
 		<!-- Right Nav Section -->
 		<ul class="right" id="buttons"  data-transition="slidedown">
-			<li class="active"><a href="#"><span class="fi-mail" style="font-size: 2rem"/></a></li>
+			<li class="active"><a href="mailto:iad.projects@ed.ac.uk" target="_top"><span class="fi-mail" style="font-size: 2rem"/></a></li>
 			<li class="active"><a href="#"><span class="fi-social-facebook" style="font-size: 2rem"/></a></li>
-			<li class="active"><a href="#"><span class="fi-social-twitter" style="font-size: 2rem"/></a></li>
-			<li class="active"><a href="#"><span class="fi-social-linkedin" style="font-size: 2rem"/></a></li>
+			<li class="active"><a href="https://twitter.com/LTW2_MMM?ref_src=twsrc%5Etfw" target="_blank"><span class="fi-social-twitter" style="font-size: 2rem"/></a></li>
+			<li class="active"><a href="https://www.linkedin.com/groups/4100224/profile" target="_blank"><span class="fi-social-linkedin" style="font-size: 2rem"/></a></li>
 		</ul>
 	</nav>
 	<!--End of top bar HTML-->
@@ -65,31 +66,44 @@
 			</ul>
 			<ul class="right" id="buttons">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="file:///H:/MMM-Project/AboutMMM.html">About MMM</a>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="file:///H:/MMM-Project/ProjectPartners.html">Project Partners</a></li>
-				<li><a href="#">Workbased Projects</a></li>
-				<li><a href="#">Publications</a></li>
-				<li><a href="#">MMM Toolkit</a></li>
+				<li><a href="about.html">About MMM</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="projectpartners.html">Project Partners</a></li>
+				<li><a href="workbasedprojects.html">Workbased Projects</a></li>
+				<li><a href="publcations.html">Publications</a></li>
+				<li><a href="MMMtoolkit.html">MMM Toolkit</a></li>
 			</ul>
 		</section>
 	</nav>
 
 	<!--End of navbar HTML-->
 	<!--Space for content-->
-		<div id="content" style="width:100%; height:70vh; background-color:lightgray;">
-		<div class="inner">
-		<div class="centered">
-				<h2>
-				Making The Most Of Masters
-				<br>
+	<div id="content">
+		<div id="background">
+		
+		</div>
+		<div class="row" id="contain">
+			<h1>Making the Most of Masters
+			<br>
 				supporting 
-				<span data-words="students,Employers,Organisations" style="opacity:1;">students </span>
-				<br>
+			<span id="changeText" style="opacity:1;">
+				students
+				<script type="text/javascript">
+					var text = ["employers", "organisations", "students"];
+					var counter = 0;
+					var elem = document.getElementById("changeText");
+					setInterval(change, 5000);
+					function change() {
+						elem.innerHTML = text[counter];
+						counter++;
+						if(counter >= text.length) { counter = 0; }
+						}
+				</script>
+			</span>
+			<br>
 				to grow & develop
-				</h2>
-				</div>
-	</div>
+			</h1>
+		</div>
 	</div>
 	<!--End of content-->
 	<footer class="footer" id="footer">
