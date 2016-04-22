@@ -24,7 +24,6 @@
 #nav-bar{
 	background: white;
 	overflow: visible;
-	z-index:1000;
 }
 
 #nav-bar .title-area{
@@ -51,7 +50,6 @@
 
 #buttons{
 	display:none;
-	
 }
 #menu:hover + #buttons {
 	display: block; 
@@ -74,6 +72,43 @@
 #nav-bar .top-bar-section .right li .dropdown {
     right: auto;
 }
+
+#aboutSublist{
+	display:none;
+}
+#aboutSublist li{
+	background-color:white;
+}
+#aboutSublist li a{
+	margin-left: 30px;
+    width: auto;
+}
+#aboutSublist:hover{
+	display:block;
+}
+#about:hover + #aboutSublist {
+	display:block;
+}
+
+#toolsetSublist{
+	display:none;
+}
+#toolsetSublist li{
+	background-color:white;
+}
+#toolsetSublist li a{
+	margin-left: 30px;
+    width: auto;
+}
+#toolsetSublist:hover{
+	display:block;
+}
+#toolset:hover + #toolsetSublist {
+	display:block;
+}
+
+
+
 
 @media screen and (min-width: 40.063rem){
 	#nav-bar section.top-bar-section {
@@ -98,4 +133,5 @@
 	#nav-bar{
 		text-align:center;
 	}
+
 }
