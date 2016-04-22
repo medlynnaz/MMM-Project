@@ -1,137 +1,62 @@
-/* css for the top bar template */
-#top-bar {
-    background: purple;
+#top-bar{
+	background-color:purple;
 	overflow:hidden;
 }
 #top-bar a{
-	background: purple;
-	max-width:120px;
-}
-
-#top-bar a:hover { 
-    background-color: white;
-	color: purple;
+    background: purple;
 }
 #top-bar #buttons a:hover { 
     background-color: white;
-	color: purple;
+    color: purple;
 }
-
-#logo{
-	background-color:white;
-}
-
 #nav-bar{
-	background: white;
-	overflow: visible;
-}
-
-#nav-bar .title-area{
-	top:25px;
-}
-#nav-bar .title-area a{ 
-	padding-right: 20px;
-}
-#drop{
-	max-width:100px;
-	overflow:visible;
+	background-color:white;
 }
 
 #nav-bar a{
-	background: white;
-	color: purple;
+    background: white;
 }
-#logo{
-	margin-right:20px;
+#nav-bar a:hover { 
+    background-color: purple;
+    color: white;
 }
 #menu{
-	border-bottom:1px solid purple;
+	background:purple !important;
+	color:white;
+}	
+.top-bar .title-area {
+    background: purple !important;
 }
-
-#buttons{
-	display:none;
+#nav-bar .top-bar-section ul li> a {
+    background: white;
+    color: purple;
 }
-#menu:hover + #buttons {
-	display: block; 
+#nav-bar .top-bar-section ul li> a:hover {
+    background: purple;
+    color: white;
 }
-#buttons:hover{
-	display:block;
+#nav-bar .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
+    color: purple;
+    display: block;
+    background: white;
 }
-#menu a:hover{
-	background-color: purple;
-	color: white;
+#current{
+	color:cornflowerblue;
 }
-#buttons a:hover { 
-    background-color: purple;
-	color: white;
-}
-
-#nav-bar section.top-bar-section {
-	
-}
-#nav-bar .top-bar-section .right li .dropdown {
-    right: auto;
-}
-
-#aboutSublist{
-	display:none;
-}
-#aboutSublist li{
-	background-color:white;
-}
-#aboutSublist li a{
-	margin-left: 30px;
-    width: auto;
-}
-#aboutSublist:hover{
-	display:block;
-}
-#about:hover + #aboutSublist {
-	display:block;
-}
-
-#toolsetSublist{
-	display:none;
-}
-#toolsetSublist li{
-	background-color:white;
-}
-#toolsetSublist li a{
-	margin-left: 30px;
-    width: auto;
-}
-#toolsetSublist:hover{
-	display:block;
-}
-#toolset:hover + #toolsetSublist {
-	display:block;
-}
-
-
-
-
-@media screen and (min-width: 40.063rem){
-	#nav-bar section.top-bar-section {
-		display: inline-block;
-	}
-	#buttons{
-		display:block;
-	}
-
-}
-
-@media screen and (min-width: 60.063rem){
-	#top-bar{
-	}
-	#top-bar .right{
-		margin-right: 10%;
-	}
-	#top-bar .title-area{
-		margin-left: 10%;
-			
-	}
+@media only screen and (min-width: 40.063em) { 
 	#nav-bar{
 		text-align:center;
 	}
+	#nav-bar section{
+		display: inline-block;
+	}
+}
 
+@media only screen and (min-width:90.063em){ 
+	#top-bar .title-area{	
+		margin-left:15%;
+	}
+	#top-bar .right{	
+		margin-right:15%;
+	}
 }

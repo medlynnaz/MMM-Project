@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/template.css" />
     <link rel="stylesheet" href="css/top-bar.css" />
 	<link rel="stylesheet" href="css/footer.css" />
-	<link rel="stylesheet" href="css/index.css" />
 	<link rel="stylesheet" href="css/foundation.css"/>
 	<!--This style sheet is used to provide the icons for the social media buttons-->
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
@@ -46,10 +45,10 @@
 		<section class="top-bar-section">
 		<!-- Right Nav Section -->
 		<ul class="right" id="buttons"  data-transition="slidedown">
-			<li class="active"><a href="mailto:iad.projects@ed.ac.uk" target="_top"><span class="fi-mail" style="font-size: 2rem"/></a></li>
+			<li class="active"><a href="#"><span class="fi-mail" style="font-size: 2rem"/></a></li>
 			<li class="active"><a href="#"><span class="fi-social-facebook" style="font-size: 2rem"/></a></li>
-			<li class="active"><a href="https://twitter.com/LTW2_MMM?ref_src=twsrc%5Etfw" target="_blank"><span class="fi-social-twitter" style="font-size: 2rem"/></a></li>
-			<li class="active"><a href="https://www.linkedin.com/groups/4100224/profile" target="_blank"><span class="fi-social-linkedin" style="font-size: 2rem"/></a></li>
+			<li class="active"><a href="#"><span class="fi-social-twitter" style="font-size: 2rem"/></a></li>
+			<li class="active"><a href="#"><span class="fi-social-linkedin" style="font-size: 2rem"/></a></li>
 		</ul>
 	</nav>
 	<!--End of top bar HTML-->
@@ -62,7 +61,7 @@
 		<section class="top-bar-section" id="nav-bar-buttons">
 		<!-- Right Nav Section -->
 			<ul id="menu" class="show-for-small-only">
-				<li><a href="#" >Menu</a>
+				<li><a>Menu</a>
 			</ul>
 			<ul class="right" id="buttons">
 				<li><a href="index.html">Home</a></li>
@@ -107,37 +106,29 @@
 			</ul>
 		</section>
 	</nav>
-
 	<!--End of navbar HTML-->
 	<!--Space for content-->
 	<div id="content">
-		<div id="background">
-		
-		</div>
-		<div class="row" id="contain">
-			<h1>Making the Most of Masters
-			<br>
-				supporting 
-			<span id="changeText" style="opacity:1;">
-				students
-				<script type="text/javascript">
-					var text = ["employers", "organisations", "students"];
-					var counter = 0;
-					var elem = document.getElementById("changeText");
-					setInterval(change, 5000);
-					function change() {
-						elem.innerHTML = text[counter];
-						counter++;
-						if(counter >= text.length) { counter = 0; }
-						}
-				</script>
-			</span>
-			<br>
-				to grow & develop
-			</h1>
+		<div class="row medium-8 medium-centered large-7 large-centered columns" id="contain">
+			<div class="blog-post">
+				<h3>Example Title <small>3/6/2015</small></h3>
+				<img class="thumbnail" src="http://placehold.it/850x350">
+				<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+			</div>
+			<div class="blog-post">
+				<h3>Example Title <small>3/6/2015</small></h3>
+				<img class="thumbnail" src="http://placehold.it/850x350">
+				<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+			</div>
+			<div class="blog-post">
+				<h3>Example Title <small>3/6/2015</small></h3>
+				<img class="thumbnail" src="http://placehold.it/850x350">
+				<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+			</div>
 		</div>
 	</div>
 	<!--End of content-->
+	<!--Start of footer-->
 	<footer class="footer" id="footer">
 		<div class="row">
 			<div id="orbit">
@@ -173,12 +164,9 @@
 			</div>
 		</div>
 	</footer>
-	<!--End of footer HTML--> 
-	    <!--End of footer HTML--> 
+	<!--End of footer HTML-->  
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-	<!--<script src="js/foundation/foundation.topbar.js"></script>-->
   </body>
 </html>
-

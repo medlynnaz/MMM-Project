@@ -1,23 +1,17 @@
 
-#orbit{
-	width:375px;
-	margin:auto;
-	margin-top:20px;
-}
-
 #footer{
 	background-color:purple;
 	text-align:center;
 	color:white;
+	padding-top:20px;
 }
 #footer p{
 	font-size:12px;
 }
-#orbit{
-	width:320px;
-}
-#footer-connect{
-	margin-top:15px;
+#orbit-contain{
+	max-width:375px !important;
+	margin:auto;
+	margin-bottom:10px;
 }
 i {
 	font-size: 2.5rem; 
@@ -28,10 +22,6 @@ i {
 }
 
 @media screen and (min-width: 60.063rem){
-	#orbit{
-		margin-top:20px;
-		width:375px;
-	}
 	.copywrite{
 		display: inherit;
 	}

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/template.css" />
     <link rel="stylesheet" href="css/top-bar.css" />
 	<link rel="stylesheet" href="css/footer.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.css"/>
+	<link rel="stylesheet" href="css/foundation.css"/>
 	<!--This style sheet is used to provide the icons for the social media buttons-->
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 	
@@ -65,12 +65,44 @@
 			</ul>
 			<ul class="right" id="buttons">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About MMM</a></li>
+				<li>
+					<ul id="about">
+						<li class="has-dropdown">
+							<a href="#">About MMM</a>
+							<ul class="dropdown">
+								<li><a href="#">The MMM Approach</a></li>
+								<li><a href="#">Learning to work</a></li>
+								<li><a href="#">MMM Legacy</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul id="aboutSublist" class="show-for-small-only sublist">
+						<li><a href="#" >The MMM Approach</a>
+						<li><a href="#" >Learning to Work</a>
+						<li><a href="#" >MMM Legacy</a>
+					</ul>
+				</li>	
 				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="projectpartners.html">Project Partners</a></li>
 				<li><a href="workbasedprojects.html">Workbased Projects</a></li>
 				<li><a href="publcations.html">Publications</a></li>
-				<li><a href="MMMtoolkit.html">MMM Toolkit</a></li>
+				<li>
+					<ul id="toolset">
+						<li class="has-dropdown">
+							<a href="#">MMM Toolkit</a>
+							<ul class="dropdown">
+								<li><a href="#">Students</a></li>
+								<li><a href="#">Employers</a></li>
+								<li><a href="#">Higher Education</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul id="toolsetSublist" class="show-for-small-only sublist">
+						<li><a href="#" >Students</a>
+						<li><a href="#" >Employers</a>
+						<li><a href="#" >Higher Education</a>
+					</ul>
+				</li>
 			</ul>
 		</section>
 	</nav>
@@ -78,6 +110,9 @@
 	<!--Space for content-->
 	<div id="content">
 		<div class="row medium-8 medium-centered large-7 large-centered columns" id="contain">
+			<hr>
+				<h3 id="title">Learning to Work</h3>
+			<hr>
 			<div class="blog-post">
 				<h3>Example Title <small>3/6/2015</small></h3>
 				<img class="thumbnail" src="http://placehold.it/850x350">
