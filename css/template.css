@@ -48,12 +48,25 @@ div .column {
 }
 #content h3 small{
 	color:lightblue;
+	margin-bottom:30px;
 }
 #title{
 	font-weight:bold;
 }
 #contain{
 	max-width:850px;
+}
+#contain small{
+	margin-left:10px;
+	margin-top:10px;
+	display:block;
+}
+
+#contain a{
+	color:purple;
+}
+#contain a:visited{
+	color:cornflowerblue;
 }
 
 .dropdown {

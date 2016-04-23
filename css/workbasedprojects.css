@@ -8,19 +8,3 @@
 #contain img:hover + div{
 	display:inherit;
 }
-#contain small{
-	margin-left:10px;
-}
-#contain small{
-	margin-top:10px;
-	display:block;
-}
-#contain a{
-	color:purple;
-}
-#contain a:visited{
-	color:cornflowerblue;
-}
-#contain iframe{
-	margin:auto;
-}
