@@ -1,8 +1,8 @@
 #background{
 	background-image: url("../img/background-new.jpg");
-	opacity: 0.2;
+	opacity: 0.4;
 	position:absolute;
-	z-index:998;
+	z-index:0;
 	width:100%;
 	height:70vh;
 }
@@ -13,7 +13,7 @@
 	padding-top:10vh;
 	opacity: 1.0 !important;
 	position:absolute;
-	z-index:999;
+	z-index:1;
 	color:purple;
 	padding-left:10px;
 	padding-right:10px;
